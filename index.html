@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shea Ghana Export | 5KG-1000KG | Gold Supplier</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+.top{background:#ff6a00;color:#fff;padding:8px 15px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap}
+.header{background:#fff;padding:12px 15px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #eee;position:sticky;top:0;z-index:99}
+.logo{font-size:22px;font-weight:900;color:#ff6a00}
+.search{flex:1;display:flex} .search input{flex:1;padding:11px;border:2px solid #ff6a00;border-radius:20px 0 0 20px} .search button{background:#ff6a00;color:#fff;border:none;padding:0 18px;border-radius:0 20px 20px 0;font-weight:bold}
+.supplier{background:#fffbe6;border:1px solid #ffe9b5;padding:14px;display:flex;gap:14px;flex-wrap:wrap}
+.badge{background:#111;color:#ffde59;padding:4px 8px;border-radius:4px;font-size:11px;font-weight:bold}
+.hero2{display:grid;grid-template-columns:2fr 1fr;gap:14px;padding:14px;background:#f5f5f5}
+@media(max-width:800px){.hero2{grid-template-columns:1fr}}
+.main-img{width:100%;height:360px;object-fit:cover;border-radius:8px}
+.thumbs{display:flex;gap:8px;margin-top:8px;overflow:auto} .thumbs img{width:70px;height:70px;object-fit:cover;border:2px solid #eee;border-radius:6px;cursor:pointer}
+.card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);margin:10px 0}
+.price{font-size:24px;color:#ff6a00;font-weight:900}
+.btn{display:block;width:100%;padding:12px;text-align:center;border-radius:20px;text-decoration:none;font-weight:bold;margin:6px 0}
+.btn-orange{background:#ff6a00;color:#fff} .btn-white{background:#fff;border:1px solid #ff6a00;color:#ff6a00} .btn-wa{background:#25D366;color:#fff}
+.qty-table td{cursor:pointer} .qty-table tr:hover{background:#fffbe6}
+select,input,textarea{width:100%;padding:11px;border:1px solid #ddd;border-radius:8px;margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:13px} th,td{border:1px solid #eee;padding:8px;text-align:left} th{background:#fafafa}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.prod{border:1px solid #eee;border-radius:8px;overflow:hidden;background:#fff} .prod img{width:100%;height:170px;object-fit:cover} .prod .p{padding:10px}
+</style>
+</head>
+<body>
+
+<div class="top"><span>✔ 8YRS Gold Supplier | Response 98% | 200+ Women Cooperative Tamale</span><span id="rate">💱 Live Rates Loading...</span></div>
+<div class="header"><div class="logo">SHEA GHANA EXPORT</div><div class="search"><input id="sinput" placeholder="Search 5KG, 20KG, 1Ton..."><button onclick="alert('WhatsApp us: +233541538569')">Search</button></div></div>
+
+<div class="supplier">
+<img src="factory.jpg" style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid #ff6a00">
+<div><b>Shea Ghana Export - Direct Factory Tamale</b> <span class="badge">✔ GOLD 8YRS</span> <span class="badge">FDA</span><br>★ 4.9/5 (127) | MOQ 5KG | Ships 48hrs FCA Accra</div>
+<div style="margin-left:auto"><a class="btn btn-orange" href="https://wa.me/233541538569">Contact Supplier</a></div>
+</div>
+
+<div class="hero2">
+<div>
+<img id="main" class="main-img" src="yellow.jpg">
+<div class="thumbs">
+<img src="yellow.jpg" onclick="main.src=this.src">
+<img src="ivory.jpg" onclick="main.src=this.src">
+<img src="jars.jpg" onclick="main.src=this.src">
+<img src="factory.jpg" onclick="main.src=this.src">
+</div>
+
+<div class="card">
+<h3>📦 Choose Quantity - From 5KG Sample to 1 Ton Bulk</h3>
+<p style="font-size:12px">Click quantity - Price auto converts</p>
+<table class="qty-table" id="qtyTable">
+<tr><th>Variety</th><th>Qty</th><th>USD</th><th>Action</th></tr>
+<tr onclick="setQty('Yellow Grade A',5,55)"><td>Yellow Grade A</td><td>5KG Trial</td><td>$55</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Yellow Grade A',20,200)"><td>Yellow Grade A</td><td>20KG</td><td>$200 ($10/KG)</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Yellow Grade A',50,475)"><td>Yellow Grade A</td><td>50KG</td><td>$475 ($9.5/KG)</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Yellow Grade A',100,950)"><td>Yellow Grade A</td><td>100KG</td><td>$950</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Yellow Grade A',1000,8500)"><td>Yellow Grade A</td><td>1 Ton</td><td>$8500</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Ivory Grade A',5,50)"><td>Ivory Pure</td><td>5KG Trial</td><td>$50</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Ivory Grade A',20,190)"><td>Ivory Pure</td><td>20KG</td><td>$190 ($9.5/KG)</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Ivory Grade A',50,450)"><td>Ivory Pure</td><td>50KG</td><td>$450</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Ivory Grade A',100,900)"><td>Ivory Pure</td><td>100KG</td><td>$900</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Ivory Grade A',1000,8000)"><td>Ivory Pure</td><td>1 Ton</td><td>$8000</td><td><b>Select</b></td></tr>
+<tr onclick="setQty('Retail Jars 1KG',20,240)"><td>Retail Jars</td><td>20 Jars</td><td>$240 ($12/Jar)</td><td><b>Select</b></td></tr>
+</table>
+</div>
+
+<div class="card">
+<h3>🌍 Worldwide Delivery - Cost & Duration (FCA Accra)</h3>
+<table>
+<tr><th>Country</th><th>Cost/KG</th><th>Duration</th><th>Min</th></tr>
+<tr><td>USA / Canada</td><td>$6.5</td><td>5 days</td><td>5KG</td></tr>
+<tr><td>UK / Ireland</td><td>$5.5</td><td>4 days</td><td>5KG</td></tr>
+<tr><td>Germany / France / EU</td><td>$5.5</td><td>4 days</td><td>5KG</td></tr>
+<tr><td>Netherlands / Belgium</td><td>$5.5</td><td>4 days</td><td>5KG</td></tr>
+<tr><td>UAE / Dubai</td><td>$4.5</td><td>3 days</td><td>5KG</td></tr>
+<tr><td>Saudi / Qatar / Kuwait / Oman</td><td>$4.8</td><td>3 days</td><td>5KG</td></tr>
+<tr><td>South Africa / Kenya / Nigeria</td><td>$6.5</td><td>4 days</td><td>5KG</td></tr>
+<tr><td>Australia / NZ</td><td>$8.5</td><td>6 days</td><td>5KG</td></tr>
+<tr><td>Japan / Korea / Singapore</td><td>$7.5</td><td>5 days</td><td>5KG</td></tr>
+<tr><td>Ghana Local (Accra, Kumasi, Tamale)</td><td>$1.5</td><td>1-2 days</td><td>5KG</td></tr>
+</table>
+<p style="font-size:12px;margin-top:8px">✔ FCA Kotoka Airport Accra - We handle FDA, Phytosanitary, Certificate of Origin, Fumigation. No hidden fee.</p>
+</div>
+
+</div>
+
+<div>
+<div class="card">
+<h3>💱 Live Currency Converter</h3>
+<div style="font-size:13px;margin:8px 0">Selected: <b id="sel">None - Click table</b></div>
+<div style="font-size:22px;color:#ff6a00;font-weight:900" id="usd">$0 USD</div>
+<div id="conv" style="font-size:13px;line-height:1.8">
+Select quantity to see EUR, GBP, GHS, AED...
+</div>
+<select id="cur" onchange="convert()"><option value="USD">USD - US Dollar</option><option value="EUR">EUR - Euro</option><option value="GBP">GBP - British Pound</option><option value="GHS">GHS - Ghana Cedi</option><option value="AED">AED - Dirham</option><option value="NGN">NGN - Naira</option><option value="ZAR">ZAR - Rand</option></select>
+<hr style="margin:12px 0">
+<b>💳 Payment Methods (Private Invoice)</b><br>
+<div style="font-size:13px;margin-top:8px;line-height:1.7">
+✔ WorldRemit / Remitly (Fastest - Same day)<br>
+✔ Wise (Recommended for US/EU)<br>
+✔ Western Union / MoneyGram<br>
+✔ Bank Transfer GCB Bank (Send papers later)<br>
+✔ Mobile Money MTN Ghana (Local)<br><br>
+<b>How it works:</b><br>
+1. You select qty → WhatsApp invoice<br>
+2. Pay via any method above<br>
+3. We film YOUR buckets packing<br>
+4. DHL tracking in 48hrs
+</div>
+<a class="btn btn-orange" id="orderBtn" href="https://wa.me/233541538569?text=Hi%20Invoice%20for%205KG">Get Invoice on WhatsApp</a>
+<a class="btn btn-wa" href="https://wa.me/233541538569?text=Live%20Video%20Call%20Tamale">📹 Book Live Video Call</a>
+</div>
+
+<div class="card">
+<h4>Order Form - 5KG to 1Ton</h4>
+<form action="https://formspree.io/f/mqazqgqy" method="POST">
+<input name="name" placeholder="Full Name *" required>
+<input name="whatsapp" placeholder="WhatsApp *" required>
+<input name="variety" id="formVariety" placeholder="Variety - Auto filled" required>
+<input name="quantity" id="formQty" placeholder="Quantity - Auto filled" required>
+<input name="country" placeholder="Country & City *" required>
+<textarea name="address" placeholder="Full Delivery Address"></textarea>
+<button type="submit" class="btn btn-orange">Submit - Get Invoice in 10mins</button>
+</form>
+</div>
+</div>
+</div>
+
+<script>
+let baseUSD=0, baseName='';
+const rates={EUR:0.92,GBP:0.79,GHS:15.5,AED:3.67,NGN:1600,ZAR:18.5,USD:1};
+async function loadRates(){
+try{
+let r=await fetch('https://api.exchangerate-api.com/v4/latest/USD').then(j=>j.json());
+if(r.rates){rates.EUR=r.rates.EUR; rates.GBP=r.rates.GBP; rates.GHS=r.rates.GHS||15.5; rates.AED=r.rates.AED; rates.NGN=r.rates.NGN; rates.ZAR=r.rates.ZAR;}
+document.getElementById('rate').innerHTML=`💱 USD→ GHS ${rates.GHS.toFixed(1)} | EUR ${rates.EUR.toFixed(2)} | GBP ${rates.GBP.toFixed(2)} | AED ${rates.AED.toFixed(2)}`;
+}catch(e){document.getElementById('rate').innerHTML=`💱 Rates: 1 USD ≈ 15.5 GHS | 0.92 EUR | 0.79 GBP | 3.67 AED`;}
+}
+loadRates();
+function setQty(variety,kg,usd){
+baseUSD=usd; baseName=variety+' '+kg+'KG';
+document.getElementById('sel').innerText=baseName;
+document.getElementById('usd').innerText='$'+usd+' USD';
+document.getElementById('formVariety').value=variety;
+document.getElementById('formQty').value=kg+'KG - $'+usd;
+document.getElementById('orderBtn').href='https://wa.me/233541538569?text=Hi%20Ransford%20Invoice%20for%20'+encodeURIComponent(baseName+' $'+usd);
+convert();
+window.scrollTo({top:400,behavior:'smooth'});
+}
+function convert(){
+let cur=document.getElementById('cur').value;
+let val=baseUSD*rates[cur];
+let box=document.getElementById('conv');
+if(baseUSD==0){box.innerHTML='Select quantity first';return;}
+box.innerHTML=`$${baseUSD} USD = <b>${val.toFixed(2)} ${cur}</b><br><br>
+EUR: €${(baseUSD*rates.EUR).toFixed(2)}<br>
+GBP: £${(baseUSD*rates.GBP).toFixed(2)}<br>
+GHS: GH₵${(baseUSD*rates.GHS).toFixed(2)}<br>
+AED: AED ${(baseUSD*rates.AED).toFixed(2)}<br>
+NGN: ₦${(baseUSD*rates.NGN).toFixed(0)}<br>
+ZAR: R${(baseUSD*rates.ZAR).toFixed(2)}`;
+document.getElementById('usd').innerText=`$${baseUSD} USD = ${val.toFixed(2)} ${cur}`;
+}
+</script>
+
+</body>
+</html>
